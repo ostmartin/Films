@@ -24,3 +24,17 @@ const movieDB = {
     ]
 };
 
+
+const promoAds = document.querySelector('.promo__adv');
+const promoGenre = document.querySelector('.promo__genre');
+const promoBg = document.querySelector('.promo__bg');
+const promoList = document.querySelector('.promo__interactive-list');
+promoList.innerHTML = '';
+
+movieDB.movies.forEach((movie, i) => {
+    promoList.innerHTML += `<li class="promo__interactive-item">${i + 1}. ${movie}</li>`;
+})
+
+promoAds.remove();
+promoGenre.textContent = 'ДРАМА';
+promoBg.style.background = 'url(../img/bg.jpg) center center/cover no-repeat';
