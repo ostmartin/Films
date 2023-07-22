@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function makeChanges() {
         promoGenre.textContent = 'ДРАМА';
-        promoBg.style.background = 'url(../img/bg.jpg) center center/cover no-repeat';
+        promoBg.style.background = 'url(img/bg.jpg) center center/cover no-repeat';
     }
 
     deleteAds();
